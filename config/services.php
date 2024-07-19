@@ -14,6 +14,10 @@ return [
     |
     */
 
+    'easy-practice' => [
+        'token' => env('EASY_PRACTICE_TOKEN'),
+    ],
+
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
     ],
