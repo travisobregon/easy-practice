@@ -31,6 +31,13 @@ class ClientResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('name')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('email'),
+                Tables\Columns\TextColumn::make('date_of_birth')
+                    ->date(),
+                Tables\Columns\ImageColumn::make('profile_image_url')
+                    ->label('Profile Image'),
             ])
             ->filters([
                 //
