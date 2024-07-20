@@ -15,6 +15,7 @@ return [
     */
 
     'easy-practice' => [
+        'base_url' => 'https://system.easypractice.net/api/v1',
         'token' => env('EASY_PRACTICE_TOKEN'),
     ],
 
