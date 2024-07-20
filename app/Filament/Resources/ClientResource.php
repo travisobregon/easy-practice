@@ -38,6 +38,12 @@ class ClientResource extends Resource
                     ->date(),
                 Tables\Columns\ImageColumn::make('profile_image_url')
                     ->label('Profile Image'),
+                Tables\Columns\TextColumn::make('status')
+                    ->badge()
+                    ->color(fn (string $state): string => match ($state) {
+                        'active' => 'success',
+                        'inactive' => 'danger',
+                    }),
             ])
             ->filters([
                 //

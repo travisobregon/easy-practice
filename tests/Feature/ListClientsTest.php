@@ -2,6 +2,7 @@
 
 use App\Filament\Resources\ClientResource\Pages\ListClients;
 use App\Models\Client;
+
 use function Pest\Livewire\livewire;
 
 it('can render page', function () {
@@ -13,7 +14,8 @@ it('can render columns', function () {
         ->assertCanRenderTableColumn('name')
         ->assertCanRenderTableColumn('email')
         ->assertCanRenderTableColumn('date_of_birth')
-        ->assertCanRenderTableColumn('profile_image_url');
+        ->assertCanRenderTableColumn('profile_image_url')
+        ->assertCanRenderTableColumn('status');
 });
 
 it('can display clients', function () {
