@@ -2,3 +2,6 @@
 
 ## Demo
 This project showcases some of the features of EasyPractice's API.
+
+https://github.com/user-attachments/assets/27208fbb-a06c-45e9-b9a9-f37e598d9222
+
