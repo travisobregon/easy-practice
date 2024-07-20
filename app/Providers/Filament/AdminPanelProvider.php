@@ -27,9 +27,8 @@ class AdminPanelProvider extends PanelProvider
             ->topNavigation()
             ->brandLogo(asset('images/logo.png'))
             ->login()
-            ->colors([
-                'primary' => '#548970',
-            ])
+            ->profile()
+            ->colors(['primary' => '#548970'])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([])
