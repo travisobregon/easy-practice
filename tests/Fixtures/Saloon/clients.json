@@ -1,0 +1,28 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Date": "Sat, 20 Jul 2024 15:07:35 GMT",
+        "Server": "Apache",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "Vary": "Authorization,User-Agent,Origin",
+        "P3P": "CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\"",
+        "Cache-Control": "max-age=0, must-revalidate, no-store, nocache, private",
+        "X-RateLimit-Limit": "60",
+        "X-RateLimit-Remaining": "54",
+        "Retry-After": "16",
+        "X-User-Id": "1087528",
+        "X-Frame-Options": "deny",
+        "Server-Timing": "app;dur=84.38",
+        "Pragma": "no-cache",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Set-Cookie": [
+            "XSRF-TOKEN=eyJpdiI6InpwVDNhdmFKWjMvS2JReFU1V1lPREE9PSIsInZhbHVlIjoiVEhtVnlMdGlUMFZGZVU4d2tJU0ptYmQ5dlVHdE5IdnRIbkdhM2JDUlpiK3JpUzVZVHQ1d0xjcU5EOGU3Y3gwSmJ4SUlGQkdsa1lVOTRFL0s1M0VnajFqQk5PRjJsdGlQZ013YnV4YWtWcFhzQnNFa0pqc2E0aitaZ2o1SkV2SFoiLCJtYWMiOiIzYmY5NDE3OWM1MmFkNTgzOWY1NzJjMWUxNDk5YTI2OWZkYjliMGZmODg4NWJlYWExNzM5ZTIzMmZkZDg2NTA3IiwidGFnIjoiIn0%3D; expires=Sun, 21 Jul 2024 15:07:35 GMT; Max-Age=86400; path=\/; secure; samesite=none",
+            "laravel_session=eyJpdiI6IlpNN1hwSlQvS3gxOTlqWXNxVVZXNHc9PSIsInZhbHVlIjoiTXR3RkR5Sm54MGQxVEtOWDF0MkY5VHFEenFseERjQko2a2MrcGRzdnpyK2plL0wxWUJYMmMvQ2k3a3VHa2ZHZmY5RHlDaUhzdGFBaFAzU3pKbmdMczlGdTBUMkkxVjJta0pNTnF5UHpqSVA2b0IzSjVUSGV2VjBERzNSYVJ4bXIiLCJtYWMiOiI1ZGM4MDAxZmIwMWUzNjUwZmMxNjk1NDkzMWFkNWI1OTk0NTcxMjI1YmVjNmFmMzNiYWUzNTRlMGNkMTJmODUyIiwidGFnIjoiIn0%3D; expires=Sun, 21 Jul 2024 15:07:35 GMT; Max-Age=86400; path=\/; secure; httponly; samesite=none"
+        ],
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "application\/json"
+    },
+    "data": "{\"data\":[{\"id\":6078023,\"name\":\"Sofia Scott (Test client)\",\"email\":\"sofia.scott@easypractice.net\",\"phone\":\"+44 1231231234\",\"address\":\"634 Stewart Locks\",\"address_line_2\":\"Palmer Branch\",\"zip\":\"LS26 8UF\",\"city\":\"West Sonialand\",\"zone\":\"Joshuafort\",\"country\":\"en\",\"alpha2\":\"GB\",\"cpr\":\"\",\"date_of_birth\":\"2000-07-12\",\"notes\":\"\",\"profile_image_url\":\"https:\\\/\\\/obj3055.public-dk6.clu4.obj.storagefactory.io\\\/user-uploads\\\/07\\\/d0\\\/1953494\\\/07d0326efba90d992254559e19caa1ca\\\/conversions\\\/ruan-richard-rodrigues-gtgxs2FW3fs-unsplash-profile.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA311C6BD327F6886F%2F20240720%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240720T150735Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Signature=410c5b1ea9e2af96dee428af327a15e8fe3a04ae27dc745d050dd30950a0746b\",\"status\":\"active\",\"created_at\":\"2024-07-19T21:16:17+01:00\",\"updated_at\":\"2024-07-19T23:35:29+01:00\",\"tags\":[]},{\"id\":6090197,\"name\":\"Sally Moon\",\"email\":\"foobar@easypractice.net\",\"phone\":\"\",\"address\":\"\",\"address_line_2\":null,\"zip\":\"\",\"city\":\"\",\"zone\":null,\"country\":null,\"alpha2\":null,\"cpr\":\"\",\"date_of_birth\":\"2006-06-02\",\"notes\":\"\",\"profile_image_url\":\"https:\\\/\\\/gravatar.com\\\/avatar\\\/?d=mm&s=200&forcedefault=y\",\"status\":\"inactive\",\"created_at\":\"2024-07-20T15:47:39+01:00\",\"updated_at\":\"2024-07-20T15:47:39+01:00\",\"tags\":[]}],\"links\":{\"first\":\"api\\\/v1\\\/clients?page_size=10&page=1\",\"last\":\"api\\\/v1\\\/clients?page_size=10&page=1\",\"prev\":null,\"next\":null},\"meta\":{\"current_page\":1,\"from\":1,\"last_page\":1,\"links\":[{\"url\":null,\"label\":\"pagination.previous\",\"active\":false},{\"url\":\"api\\\/v1\\\/clients?page_size=10&page=1\",\"label\":\"1\",\"active\":true},{\"url\":null,\"label\":\"pagination.next\",\"active\":false}],\"path\":\"api\\\/v1\\\/clients?page_size=10\",\"per_page\":10,\"to\":2,\"total\":2}}"
+}
