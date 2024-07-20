@@ -1,0 +1,28 @@
+{
+    "statusCode": 201,
+    "headers": {
+        "Date": "Sat, 20 Jul 2024 15:56:00 GMT",
+        "Server": "Apache",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "Vary": "Authorization,User-Agent,Origin",
+        "P3P": "CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\"",
+        "Cache-Control": "max-age=0, must-revalidate, no-store, nocache, private",
+        "X-RateLimit-Limit": "60",
+        "X-RateLimit-Remaining": "59",
+        "Retry-After": "60",
+        "X-User-Id": "1087528",
+        "X-Frame-Options": "deny",
+        "Server-Timing": "app;dur=216.45",
+        "Pragma": "no-cache",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Set-Cookie": [
+            "XSRF-TOKEN=eyJpdiI6IlpPOUtvUHM3bDhvbEVxTG1oSXdhV1E9PSIsInZhbHVlIjoiTUlJcmRMUE5lbm5YZ3lmeVZjMEZQU3I2aHJGcGJJeDAydjE5WHZ1U3VsZDN1VE9ZQVdMdzhjM2ZpNSt4bWZ3REFHbTZvQXQxVDg4M3FMRER2bmk0MUErbUlXN3pWZTNRQlZjOTk0TEs0L0o1WUlDdm1RSUVtakc2Wml6MVUvSk4iLCJtYWMiOiJjYWQ1MmQ0MzkwZTlkOGVkMzBhZDQwYTU4MGQ4ZTM3MGUyYjcxMzZlZWUxOTUzZDZkNTdjOWRjNDBiYjAxMDhiIiwidGFnIjoiIn0%3D; expires=Sun, 21 Jul 2024 15:56:00 GMT; Max-Age=86400; path=\/; secure; samesite=none",
+            "laravel_session=eyJpdiI6IlJLa1laUVVhTnpFcy84eTEvOHZKV3c9PSIsInZhbHVlIjoiMnhiNlZzNHd2QWhRekpMNmxsVzRTRDRON2VmMmkvVFFJNUN4M1JsR1FvWU1CcGVuQjNId1ZLMFl5aUdNQjFrUXdUOEt6am5abGg3QVJxd05ZTmlldWN0UTZXWTMxeDhpeTBhQVRsK0ZJbEs1ZW83MnpRVHU2MzFwVUszZFBhb2wiLCJtYWMiOiJhY2JlMDdlZTI0NzNmNGUwNTA0YjMwYTRkMjJlYWU2ZWMwNjdjZDM3ODA1ODkwNzRkYTk2ZTcyODY1NjY4NzU0IiwidGFnIjoiIn0%3D; expires=Sun, 21 Jul 2024 15:56:00 GMT; Max-Age=86400; path=\/; secure; httponly; samesite=none"
+        ],
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "application\/json"
+    },
+    "data": "{\"message\":\"The client Elwin Bailey  was created\",\"data\":{\"id\":6090235,\"name\":\"Elwin Bailey\",\"email\":\"tanya.reichert@schultz.com\",\"phone\":\"\",\"address\":\"\",\"address_line_2\":null,\"zip\":\"\",\"city\":\"\",\"zone\":null,\"country\":null,\"alpha2\":null,\"cpr\":\"\",\"date_of_birth\":\"1976-09-17\",\"notes\":\"\",\"profile_image_url\":\"https:\\\/\\\/gravatar.com\\\/avatar\\\/?d=mm&s=200&forcedefault=y\",\"status\":\"active\",\"created_at\":\"2024-07-20T16:56:00+01:00\",\"updated_at\":\"2024-07-20T16:56:00+01:00\",\"tags\":[]}}"
+}
