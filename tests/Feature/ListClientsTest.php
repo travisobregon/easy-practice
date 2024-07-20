@@ -10,7 +10,7 @@ use function Pest\Livewire\livewire;
 
 beforeEach(function () {
     MockClient::global([
-        GetClientsRequest::class => MockResponse::fixture('clients'),
+        GetClientsRequest::class => MockResponse::fixture('clients/index'),
     ]);
 });
 
