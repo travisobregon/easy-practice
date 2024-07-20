@@ -21,6 +21,7 @@ class ClientFactory extends Factory
             'email' => $this->faker->unique()->safeEmail,
             'date_of_birth' => $this->faker->date(),
             'profile_image_url' => $this->faker->imageUrl(),
+            'status' => $this->faker->randomElement(['active', 'inactive']),
         ];
     }
 }
