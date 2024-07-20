@@ -1,9 +1,18 @@
 <?php
 
 use App\Filament\Resources\ClientResource\Pages\ListClients;
+use App\Http\Integrations\EasyPractice\Requests\GetClientsRequest;
 use App\Models\Client;
+use Saloon\Http\Faking\MockClient;
+use Saloon\Http\Faking\MockResponse;
 
 use function Pest\Livewire\livewire;
+
+beforeEach(function () {
+    MockClient::global([
+        GetClientsRequest::class => MockResponse::fixture('clients'),
+    ]);
+});
 
 it('can render page', function () {
     livewire(ListClients::class)->assertSuccessful();
@@ -19,15 +28,15 @@ it('can render columns', function () {
 });
 
 it('can display clients', function () {
-    $clients = Client::factory()->count(2)->create();
+    $clients = Client::query()->get();
 
     livewire(ListClients::class)
-        ->assertCanSeeTableRecords($clients);
+        ->assertCanSeeTableRecords($clients)
+        ->assertCountTableRecords(2);
 });
 
 it('can search clients by name', function () {
-    $clients = Client::factory()->count(2)->create();
-
+    $clients = Client::query()->get();
     $name = $clients->first()->name;
 
     livewire(ListClients::class)
