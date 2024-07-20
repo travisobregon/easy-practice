@@ -32,8 +32,9 @@ class Booking extends Model implements Eventable
         return $easyPractice->send($request)->collect('data')->map(function ($booking) {
             return Arr::only($booking, [
                 'id',
-                'client_id',
                 'calendar_id',
+                'client_id',
+                'client_name',
                 'start',
                 'end',
                 'status',
@@ -54,8 +55,8 @@ class Booking extends Model implements Eventable
         ];
 
         return Event::make($this)
-            ->title($this->client->name)
-            ->backgroundColor($backgroundColors[$this->client->id % count($backgroundColors)])
+            ->title($this->client_name)
+            ->backgroundColor($backgroundColors[$this->client_id % count($backgroundColors)])
             ->start($this->start)
             ->end($this->end);
     }
