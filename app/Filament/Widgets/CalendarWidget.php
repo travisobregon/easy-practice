@@ -72,7 +72,7 @@ class CalendarWidget extends BaseCalendarWidget
                     $easyPractice->send(new GetBookingsRequest);
                 }),
         ];
-}
+    }
 
     public function editAction(): Action
     {

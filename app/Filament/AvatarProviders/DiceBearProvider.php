@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\URL;
 
 class DiceBearProvider implements AvatarProvider
 {
-    public function get(Model | Authenticatable $record): string
+    public function get(Model|Authenticatable $record): string
     {
         return URL::query('https://api.dicebear.com/9.x/bottts-neutral/svg', [
             'seed' => Filament::getNameForDefaultAvatar($record),
