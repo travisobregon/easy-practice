@@ -3,16 +3,21 @@
 namespace App\Filament\Widgets;
 
 use App\Http\Integrations\EasyPractice\EasyPracticeConnector;
+use App\Http\Integrations\EasyPractice\Requests\CreateBookingRequest;
 use App\Http\Integrations\EasyPractice\Requests\GetBookingsRequest;
 use App\Http\Integrations\EasyPractice\Requests\UpdateBookingRequest;
 use App\Models\Booking;
+use App\Models\Client;
 use Closure;
 use Filament\Actions\Action;
 use Filament\Forms;
+use Guava\Calendar\Actions\CreateAction;
 use Guava\Calendar\Actions\EditAction;
 use Guava\Calendar\Widgets\CalendarWidget as BaseCalendarWidget;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Date;
 use Illuminate\Support\HtmlString;
 
 class CalendarWidget extends BaseCalendarWidget
@@ -34,6 +39,10 @@ class CalendarWidget extends BaseCalendarWidget
     public function getSchema(?string $model = null): ?array
     {
         return [
+            Forms\Components\Select::make('client_id')
+                ->label('Client')
+                ->options(fn () => Client::query()->pluck('name', 'id'))
+                ->required(),
             Forms\Components\DateTimePicker::make('start')
                 ->required()
                 ->format('Y-m-d\TH:i:sP'),
@@ -43,6 +52,27 @@ class CalendarWidget extends BaseCalendarWidget
                 ->format('Y-m-d\TH:i:sP'),
         ];
     }
+
+    public function getDateClickContextMenuActions(): array
+    {
+        return [
+            CreateAction::make()
+                ->model(Booking::class)
+                ->mountUsing(fn ($arguments, $form) => $form->fill([
+                    'start' => Arr::get($arguments, 'dateStr'),
+                    'end' => Date::parse(Arr::get($arguments, 'dateStr'))->addHour(),
+                ]))
+                ->using(function (array $data) {
+                    $easyPractice = new EasyPracticeConnector;
+                    $request = new CreateBookingRequest($data);
+
+                    $easyPractice->send($request);
+
+                    $easyPractice->invalidateCache();
+                    $easyPractice->send(new GetBookingsRequest);
+                }),
+        ];
+}
 
     public function editAction(): Action
     {
